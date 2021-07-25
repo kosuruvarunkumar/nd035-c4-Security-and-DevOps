@@ -36,16 +36,6 @@ public class User {
 	@JsonIgnore
     private Cart cart;
 
-	private String salt;
-
-	public String getSalt() {
-		return salt;
-	}
-
-	public void setSalt(String salt) {
-		this.salt = salt;
-	}
-
 	public Cart getCart() {
 		return cart;
 	}
