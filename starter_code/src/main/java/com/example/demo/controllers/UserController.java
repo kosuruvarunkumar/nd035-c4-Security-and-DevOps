@@ -54,6 +54,7 @@ public class UserController {
 			userRepository.save(user);
 		} catch(Exception e) {
 			logger.error(e.toString());
+			return ResponseEntity.unprocessableEntity().build();
 		}
 
 		String log = "User with userName: " + user.getUsername() + " got created";
